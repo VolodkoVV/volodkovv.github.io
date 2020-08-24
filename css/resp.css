@@ -1,0 +1,65 @@
+@media all and (max-width:1200px){
+    header{
+        display: none;
+    }
+}
+@media all and (max-width:800px){
+    body{
+        padding-top: 110px;
+    }
+    .main-box header {
+        height: 100px;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 999;
+        background-color: white;
+        box-shadow: 1px 1px 18px -5px rgba(0, 0, 0, 0.7 );
+    }
+    header .center-box .form,
+    header .bottom-box nav{
+        display: none;
+    }
+    header .center-box .logo{
+        position: absolute;
+        left: 50%;
+        margin-left: -84px;
+    }
+    .bottom-box .mob-nav{
+        display: block;
+    }
+    .flex-cont{
+        flex-wrap: wrap;
+    }
+    .flex-cont .left-box,
+    .flex-cont aside{
+        width: 100%;
+    }
+    .table-soc tbody{
+        display: flex;
+        padding-top: 10px;
+    }
+    .flex-cont .left-box .img .mask{
+        height: initial;
+        padding-bottom: 50px;
+    }
+}
+@media all and (max-width:700px){
+    .bottom-mask .links li a span{
+        display: none;
+    }
+    .bottom-mask .links li{
+        border-right: 0 !important;
+    }
+    .flex-cont .left-box .img,
+    .flex-cont .left-box .img img{
+        height: auto !important; 
+    }
+}
+@media all and (max-width:480px){
+    .flex-cont .left-box .img .mask p{
+        display: none !important;
+        pointer-events: auto;
+    }
+}
