@@ -1,0 +1,194 @@
+.danger::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    bottom: -12px;
+    display: block;
+    width: 100%;
+    height: 109px;
+    background: url("http://evrhst-a.akamaihd.net/7966/img/wave-top.png") 0 0 no-repeat;
+}
+
+.danger-title {
+    margin-bottom: 30px;
+}
+
+.danger-slogan {
+    text-align: center;
+    color: #2b2828;
+    font-size: 24px;
+    margin-bottom: 47px;
+}
+
+.danger-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    counter-reset: section;
+    margin-bottom: 70px;
+}
+
+.danger-item {
+    margin-right: 50px;
+    width: 33%;
+}
+
+.danger-item:hover .danger-item__descr:before {
+    background: #f4d3bb;
+}
+
+.danger-item:nth-child(2) .danger-number {
+    background-color: #e47643;
+}
+
+.danger-item:nth-child(2) svg.circle {
+    stroke: #e47643;
+}
+
+.danger-item:nth-child(3) .danger-number {
+    background-color: #ec5b19;
+}
+
+.danger-item:nth-child(3) svg.circle {
+    stroke: #ec5b19;
+}
+
+.danger-item:last-child {
+    margin-right: 0;
+}
+
+.danger-item__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+.dangerCircle .circle {
+    animation-name: dangerCircle;
+    animation-duration: 1s;
+}
+
+.danger-item__text {
+    margin-left: 20px;
+    font-size: 22px;
+    line-height: 1.1;
+}
+
+.danger-item__descr {
+    position: relative;
+    color: #444444;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.danger-item__descr:before {
+    content: "";
+    position: absolute;
+    top: -18px;
+    left: 0;
+    height: 3px;
+    width: 50px;
+    background: #becbd8;
+}
+
+.danger svg.circle {
+    fill: transparent;
+    stroke-width: 8px;
+    stroke: #ec9a6a;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 170, 470;
+}
+
+.danger-number {
+    position: absolute;
+    top: -8px;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background-color: #ec9a6a;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+}
+
+.danger-number:after {
+    content: counter(section);
+    counter-increment: section;
+    font-size: 30px;
+    color: #fff;
+}
+
+.danger-img {
+    position: relative;
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+}
+
+.danger-img__circle {
+    position: absolute;
+    left: -22px;
+    top: -25px;
+    width: 212px;
+    height: 212px;
+    -webkit-transform: rotate(170deg);
+    -ms-transform: rotate(170deg);
+    transform: rotate(170deg);
+}
+
+.danger-stat {
+    position: relative;
+    z-index: 2;
+    border: 3px solid #f4d3bb;
+    background-color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    padding: 40px 10px;
+}
+
+.danger-stat:before {
+    content: "";
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    background: url(http://evrhst-a.akamaihd.net/7966/img/danger-stat.svg) no-repeat center center;
+    width: 55px;
+    height: 37px;
+    z-index: 3;
+}
+
+.danger-stat:after {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    width: 170px;
+    height: 10px;
+    background: #fff;
+    z-index: 2;
+}
+
+.danger-stat__text {
+    color: #444444;
+    font-size: 22px;
+}

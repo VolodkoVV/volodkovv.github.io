@@ -1,0 +1,158 @@
+.block {
+    padding: 60px 0;
+}
+
+.font_light {
+    font-weight: 300;
+}
+
+.font_medium {
+    font-weight: 500;
+}
+
+.font_bold {
+    font-weight: 700;
+}
+
+.font_black {
+    font-weight: 900;
+}
+
+.font_italic {
+    font-style: italic;
+}
+
+.color-text_black {
+    color: #000;
+}
+
+.color-text_grey {
+    color: #444444;
+}
+
+.border-orange-big {
+    position: relative;
+    z-index: 1;
+}
+
+.border-orange-big::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: #ff6b00;
+    bottom: -1px;
+    left: 0;
+    z-index: -1;
+}
+
+.border-orange-small {
+    position: relative;
+    z-index: 1;
+}
+
+.border-orange-small::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #ff6b00;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.border-green-big {
+    position: relative;
+    z-index: 1;
+}
+
+.border-green-big::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: #a7c93d;
+    bottom: -1px;
+    left: 0;
+    z-index: -1;
+}
+
+.border-green-small {
+    position: relative;
+    z-index: 1;
+}
+
+.border-green-small::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #a7c93d;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.btn-box {
+    width: 100%;
+    margin: 15px 0 20px;
+    padding: 5px;
+    background: #ffbe02;
+    background: -webkit-gradient(linear, left top, right top, from(#ffbe02), to(#ffcc02));
+    background: -webkit-linear-gradient(left, #ffbe02 0%, #ffcc02 100%);
+    background: -o-linear-gradient(left, #ffbe02 0%, #ffcc02 100%);
+    background: linear-gradient(to right, #ffbe02 0%, #ffcc02 100%);
+    border-radius: 100px;
+    cursor: pointer;
+    -webkit-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+}
+
+.btn-box:hover {
+    -webkit-box-shadow: 0 0 15px 5px #ffd34a;
+    box-shadow: 0 0 15px 5px #ffd34a;
+}
+
+.btn {
+    display: block;
+    padding: 9px 39px 6px 41px;
+    font-size: 28px;
+    line-height: 0.6;
+    font-weight: 700;
+    background-color: transparent;
+    border: 3px solid #ffd24e;
+    border-radius: 100px;
+}
+
+.btn .small-text {
+    font-size: 16px;
+    line-height: 1;
+}
+
+.title {
+    position: relative;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: normal;
+    text-align: center;
+}
+
+.title-decor {
+    margin-top: 83px;
+}
+
+.title-decor::before {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: -83px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 92px;
+    height: 65px;
+    background: url("http://evrhst-a.akamaihd.net/7966/img/section-decor.png") no-repeat 0 0;
+}

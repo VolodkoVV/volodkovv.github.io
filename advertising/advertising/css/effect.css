@@ -1,0 +1,122 @@
+.effect-title {
+    margin-bottom: 80px;
+    line-height: 1 !important;
+}
+
+.effect-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.radius {
+    width: 100px;
+    height: 50px;
+    border: 2px solid #F64D01;
+    border-radius: 0 0 50% 50% / 0 0 100% 100%;
+    display: inline-block;
+    position: absolute;
+    top: -2px;
+    right: 130px;
+    z-index: 30;
+}
+
+.effect-title {
+    width: 989px;
+    right: -86px;
+}
+
+.effect-item {
+    width: 33%;
+    border: 3px solid #F64D01;
+    background-color: #fff;
+    margin-right: 30px;
+    border-radius: 7px;
+    text-align: center;
+    position: relative;
+    padding: 63px 17px 35px;
+}
+
+.effect-item:last-child {
+    border: 3px solid #62BD1F;
+}
+
+.effect-item:last-child .radius {
+    border: 3px solid #62BD1F;
+    width: 98px;
+    height: 48px;
+}
+
+.effect-img {
+    max-width: 80%;
+}
+
+.effect-item:last-child {
+    margin-right: 0;
+}
+
+.mic {
+    color: #F64D01;
+}
+
+.effect-item__img {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: #ffffff;
+    border-radius: 50%;
+    top: -50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 35;
+}
+
+.effect-item__title {
+    font-size: 24px;
+    margin-bottom: 9px;
+}
+
+.effect-item__slogan {
+    color: #222222;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 47px;
+}
+
+.effect-item__slogan span {
+    font-weight: 700;
+}
+
+.effect-item__text {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.effect-slogan {
+    display: inline-block;
+    position: relative;
+    top: -47px;
+    font-weight: 500;
+    left: 18%;
+    font-size: 18px;
+}
+
+.effect-ques {
+    font-size: 27px;
+    width: 69%;
+    border: 3px solid #F64D01;
+    background-color: #fff;
+    margin-right: 0px;
+    text-align: center;
+    position: relative;
+    padding: 25px 20px 25px;
+    left: 15%;
+    border-image: linear-gradient(to right, #F64D01 0%, #62BD1F 100%);
+    border-image-slice: 1;
+    border-radius: 5px;
+    background-image: linear-gradient(white, white);
+}
